@@ -7,9 +7,11 @@ cask "mobster" do
   desc "Command-line tool for Mobster, now part of the Mobster app"
   homepage "https://mobster.dev/"
 
-  deprecate! date:             "2026-10-13",
-             because:          "is now part of Mobster for Mac",
-             replacement_cask: "radishsoftware/tap/mobster-app"
+  # Before launch (14 Oct 2026) the cask installs nothing and says so. Launch day: put back
+  #   deprecate! date:             "2026-10-13",
+  #              because:          "is now part of Mobster for Mac",
+  #              replacement_cask: "radishsoftware/tap/mobster-app"
+  disable! date: "2026-10-13", because: "is coming soon: mobster.dev"
 
   depends_on arch: :arm64
   depends_on macos: :ventura

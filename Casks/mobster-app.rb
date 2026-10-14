@@ -12,6 +12,9 @@ cask "mobster-app" do
     strategy :github_latest
   end
 
+  # Before launch (14 Oct 2026) the cask installs nothing and says so. Launch day: delete this line.
+  disable! date: "2026-10-13", because: "is coming soon: mobster.dev"
+
   auto_updates true
   depends_on arch: :arm64
   depends_on macos: :ventura
