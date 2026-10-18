@@ -1,6 +1,6 @@
 cask "mobster-app" do
-  version "0.3.0"
-  sha256 "1b90505f28ece3b89d038720687bad8bf07e507c1eea94e5228615a4ae6e4b3c"
+  version "0.4.0"
+  sha256 "a1f634cf12c7d3da69ddc383f7cb4643a154fa0575ae5ee15c49478d660f8073"
 
   url "https://github.com/RadishSoftware/mobster-releases/releases/download/v#{version}/Mobster_#{version}_Apple-Silicon.dmg"
   name "Mobster"
