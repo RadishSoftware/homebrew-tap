@@ -13,10 +13,12 @@ cask "mobster-app" do
   end
 
   auto_updates true
+  conflicts_with cask: "mobster"
   depends_on arch: :arm64
   depends_on macos: :ventura
 
   app "Mobster.app"
+  binary "#{appdir}/Mobster.app/Contents/MacOS/mobster-agent", target: "mobster"
 
   zap trash: [
     "~/Library/Application Support/app.mobster.desktop",
