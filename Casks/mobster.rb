@@ -18,8 +18,10 @@ cask "mobster" do
 
   caveats <<~EOS
     The Mobster CLI is now part of Mobster for Mac.
-    Download it at https://mobster.dev/download, or:
+    To switch with Homebrew, uninstall this cask first:
+      brew uninstall --cask mobster
       brew install --cask radishsoftware/tap/mobster-app
-    Your existing mobster install keeps working.
+    Or download Mobster for Mac at https://mobster.dev/download.
+    Your mobster 0.3.0 command keeps working until you uninstall this cask.
   EOS
 end
